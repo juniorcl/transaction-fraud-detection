@@ -85,8 +85,62 @@ This project will be based on Cross-industry standard process for data mining (C
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/CRISP-DM_Process_Diagram.png" alt="Kitten" title="A cute kitten" width="430" height="430" />
 </div>
 
-## Results
+## Model Results
 
-### Model Results
+Some models have been tested to obtain the best model for this project. However the best model selected was Gradient Boosting model [XGBClassifier](https://xgboost.readthedocs.io/en/latest/). The model was also fine tuned to achieve better parameter than the defaults. Now the results of the model were shown in single performance (train and valid) and corss validation performance (the entire database is used to train and test the model). For a final assessment of the model, it was used to predict "unseen" data and assess its scores.
 
-Some models have been tested to obtain the best model for this project. 
+### Single Results
+
+| Balanced Accuracy   | Precision | Recall | F1     | Kappa |
+| ------------------- | --------- | ------ | ------ | ----- |
+| 0.863               | 0.969     | 0.725  | 0.83  | 0.83 |
+
+### Cross Validation
+
+| Balanced Accuracy   | Precision       | Recall          | F1              | Kappa           |
+| ------------------- | --------------- | --------------- | --------------- | --------------- |
+| 0.881 +/- 0.017     | 0.963 +/- 0.007 | 0.763 +/- 0.035 | 0.851 +/- 0.023 | 0.851 +/- 0.023 |
+
+### Unseen Data
+
+| Balanced Accuracy   | Precision | Recall | F1     | Kappa |
+| ------------------- | --------- | ------ | ------ | ----- |
+| 0.915               | 0.944     | 0.829  | 0.883  | 0.883 |
+
+## Business Questions
+
+* ### The company receives 25% of each transaction value truly detected as fraud.
+
+    The company can receive R$ 60,613,782.88 detecting fraud transactions.
+
+* ### The company receives 5% of each transaction value detected as fraud, however the transaction is legitimate.
+
+    For wrong decisions, the company can receive R$ 183,866.98.
+
+* ### The company gives back 100% of the value for the customer in each transaction detected as legitimate, however the transaction is actually a fraud.
+
+    However, the company must return the amount of R$ 3,546,075.42.
+
+* ### What is the model's Precision and Accuracy?
+
+    For unseen data, the values of balanced accuracy is equal 0.915 and precision is equal 0.944.
+
+* ### How reliable is the model in classifying transactions as legitimate or fraudulent?
+
+    The model can detect 0.763 +/- 0.035 of the fraud. However it detected 0.829 of the frauds from a unseen data.
+
+* ### What is the revenue expected by the company classify 100% of transactions with the model?
+
+    Using the model the company can revenue R$ 60,797,649.86. Using the currently method to detect fraud the revenue is 0.00.
+
+* ### What is the loss expected by the Company if it classifies 100% of the transactions with the model?
+
+    For wrong classifications the company must return the amount of R$ 3,546,075.42. In contrast, for wrong classifications using the currently method, the company must return the amount of R$ 246,001,206.94.
+
+* ### What is the profit expected by the blocker fraud company when using the model?
+
+    The company can expect the profit of R$ 57,251,574.44. The profit value of the currently method is R$ -246,001,206.94.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
