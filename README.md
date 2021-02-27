@@ -144,35 +144,35 @@ It's possible to determinize the capacity of the model to generalize using unsee
 
 * #### The company receives 25% of each transaction value truly detected as fraud.
 
-    The company can receive R$ 60,613,782.88 detecting fraud transactions.
+    The company can receive R\$ 60,613,782.88 detecting fraud transactions.
 
 * #### The company receives 5% of each transaction value detected as fraud, however the transaction is legitimate.
 
-    For wrong decisions, the company can receive R$ 183,866.98.
+    For wrong decisions, the company can receive R\$ 183,866.98.
 
 * #### The company gives back 100% of the value for the customer in each transaction detected as legitimate, however the transaction is actually a fraud.
 
-    However, the company must return the amount of R$ 3,546,075.42.
+    The company must return the amount of R\$ 3,546,075.42.
 
 * #### What is the model's Precision and Accuracy?
 
-    For unseen data, the values of balanced accuracy is equal 0.915 and precision is equal 0.944.
+    For unseen data, the values of balanced accuracy is equal 91.5% and precision is equal 94.4%.
 
 * #### How reliable is the model in classifying transactions as legitimate or fraudulent?
 
-    The model can detect 0.763 +/- 0.035 of the fraud. However it detected 0.829 of the frauds from a unseen data.
+    The model can detect 76.3% +/- 3.5% of the fraud. However it detected 0.829 of the frauds from a unseen data.
 
 * #### What is the revenue expected by the company classify 100% of transactions with the model?
 
-    Using the model the company can revenue R$ 60,797,649.86. Using the currently method to detect fraud the revenue is 0.00.
+    Using the model the company can revenue R\$ 60,797,649.86. Using the currently method to detect fraud the revenue is 0.00.
 
 * #### What is the loss expected by the Company if it classifies 100% of the transactions with the model?
 
-    For wrong classifications the company must return the amount of R$ 3,546,075.42. In contrast, for wrong classifications using the currently method, the company must return the amount of R$ 246,001,206.94.
+    For wrong classifications the company must return the amount of R\$ 3,546,075.42. In contrast, for wrong classifications using the currently method, the company must return the amount of R\$ 246,001,206.94.
 
 * #### What is the profit expected by the blocker fraud company when using the model?
 
-    The company can expect the profit of R$ 57,251,574.44. The profit value of the currently method is R$ -246,001,206.94.
+    The company can expect the profit of R\$ 57,251,574.44. The profit value of the currently method is R\$ -246,001,206.94.
 
 ## 8.0 Conclusions
 
@@ -186,7 +186,7 @@ The company may expect a revenue of R\$ 57,251,574.44. This result may show the 
 
 * It is possible to create a model that can classify classes with less than 1% of samples.
 
-## 1.0 Next Steps
+## 10.0 Next Steps
 
 * Test at most more 10 hypothesis.
 
