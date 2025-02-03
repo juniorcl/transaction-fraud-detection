@@ -3,7 +3,7 @@
 A data science project to predict whether a transaction is a fraud or not.
 
 <div align="center">
-    <img alt="churn" src="https://www.finance-monthly.com/Finance-Monthly/wp-content/uploads/2018/07/Fraud-Epidemic-Costs-%C2%A33.2-Trillion-Globally.jpg" width="100%" height="300">
+    <img alt="Transaction Fraud Detection" src="./reports/figures/high-angle-credit-card-with-hook-phishing.jpg" width="100%" height="300">
 </div>
 
 <br>
